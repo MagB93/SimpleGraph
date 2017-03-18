@@ -3,7 +3,7 @@
 #ifndef PAIR_N
 #define PAIR_N
 
-template <typename E1, typename E2> class Pair: public std::set<E1, E2>{
+template <typename E1, typename E2> class Pair{
     private:
         E1 first; E2 second;
 
