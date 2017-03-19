@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mbadel/opt/SimpleGraph/src/myset.cpp
+myset.h
+/home/mbadel/opt/SimpleGraph/src/myset.h
+
