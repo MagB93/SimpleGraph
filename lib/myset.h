@@ -1,11 +1,14 @@
-#include<set>
+#include<list>
 
 #ifndef MYSET_N
 #define MYSET_N
 
-#endif
 
-template<typename T> class MySet: std::set<T>{
+template<typename T> class MySet: std::list<T>{
+    private:
+        T[] array;
+        int size;
+
     public:
         bool contains(T MySet);
         bool isSubsetOf(MySet<T> set);
@@ -13,3 +16,4 @@ template<typename T> class MySet: std::set<T>{
         MySet<T> union(MySet<T> set);
 
 };
+#endif
