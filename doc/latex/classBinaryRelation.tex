@@ -1,0 +1,199 @@
+\hypertarget{classBinaryRelation}{}\section{Binary\+Relation$<$ E1, E2 $>$ Class Template Reference}
+\label{classBinaryRelation}\index{Binary\+Relation$<$ E1, E2 $>$@{Binary\+Relation$<$ E1, E2 $>$}}
+
+
+{\ttfamily \#include $<$binary\+\_\+relation.\+h$>$}
+
+Inheritance diagram for Binary\+Relation$<$ E1, E2 $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBinaryRelation}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBinaryRelation_a7584a6c9b21ce062737d776b3790f30c}{Binary\+Relation} ()
+\item 
+\hyperlink{classBinaryRelation_a94a2796b569f98d07f1c3662ec01706d}{Binary\+Relation} (const \hyperlink{classBinaryRelation}{Binary\+Relation}$<$ E1, E2 $>$ \&binrel)
+\item 
+\hyperlink{classBinaryRelation_aad68b809d5a88cad7589c1c0c6507307}{Binary\+Relation} (const E1 \&inputset, const E2 \&targetset)
+\item 
+\hyperlink{classBinaryRelation_a962cb01ecccb3f3c4ce821925f91ecd6}{$\sim$\+Binary\+Relation} ()
+\item 
+bool \hyperlink{classBinaryRelation_a50e035f8c6a6ea0f3d410100200bf8ff}{add} (E1 first, E2 second)
+\item 
+bool \hyperlink{classBinaryRelation_a8ae41ea2181d7cc5d1707c4584e8ebe0}{remove} (E1 first, E2 second)
+\item 
+bool \hyperlink{classBinaryRelation_a99c4077f22f057fc0fd4294d57be22a2}{remove\+\_\+pair} (E1 first, E2 second)
+\item 
+bool \hyperlink{classBinaryRelation_af8a9dd2f77b61656784a3a839264f6c4}{remove\+\_\+from\+\_\+pretarget\+\_\+set} (E1 first)
+\item 
+bool \hyperlink{classBinaryRelation_a440767b58c9070ea5fd1d94dfbd22c62}{remove\+\_\+from\+\_\+target\+\_\+set} (E2 second)
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{classBinaryRelation_a96805510d13dac057a06d16a27196447}{check\+\_\+and\+\_\+erase} (std\+::set$<$ T $>$ templ\+\_\+set, T key)
+\item 
+\hyperlink{classBinaryRelation}{Binary\+Relation}$<$ E2, E1 $>$ \hyperlink{classBinaryRelation_af18e09570203d804f5bb36cc5e6da75b}{transposition} ()
+\item 
+{\footnotesize template$<$typename E3 $>$ }\\\hyperlink{classBinaryRelation}{Binary\+Relation}$<$ E1, E3 $>$ \hyperlink{classBinaryRelation_a5bb10d4cea0215ed647beec54f862414}{product} (\hyperlink{classBinaryRelation}{Binary\+Relation}$<$ E2, E3 $>$ relation)
+\item 
+std\+::set$<$ E1 $>$ \hyperlink{classBinaryRelation_a14bd1065b37bbf0793eb39dde25adf3b}{get\+\_\+input\+\_\+set} ()
+\item 
+std\+::set$<$ E2 $>$ \hyperlink{classBinaryRelation_a97083c4e6c05cd1838f265819b608263}{get\+\_\+target\+\_\+set} ()
+\item 
+std\+::set$<$ \hyperlink{classPair}{Pair}$<$ E1, E2 $>$ $>$ \hyperlink{classBinaryRelation_acd26705b6496d2db082489df739485f2}{get\+\_\+pair\+\_\+set} ()
+\item 
+void \hyperlink{classBinaryRelation_a0b115484a4a411d873c0b77a4958a019}{set\+\_\+input\+\_\+set} (const std\+::set$<$ E1 $>$ \&input)
+\item 
+void \hyperlink{classBinaryRelation_afa844b52bece82c8519bc1f90b0dcef2}{set\+\_\+target\+\_\+set} (const std\+::set$<$ E2 $>$ \&target)
+\item 
+void \hyperlink{classBinaryRelation_a300cf42e6c66b9fc3b2ccf1877cc9587}{set\+\_\+pair\+\_\+set} (const std\+::set$<$ \hyperlink{classPair}{Pair}$<$ E1, E2 $>$ $>$ \&pairs)
+\item 
+bool \hyperlink{classBinaryRelation_a8921eea825f118f12079ff73866a95b8}{operator==} (const \hyperlink{classBinaryRelation}{Binary\+Relation}$<$ E1, E2 $>$ \&comp\+\_\+rel)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBinaryRelation_a7584a6c9b21ce062737d776b3790f30c}\label{classBinaryRelation_a7584a6c9b21ce062737d776b3790f30c}} 
+\index{Binary\+Relation@{Binary\+Relation}!Binary\+Relation@{Binary\+Relation}}
+\index{Binary\+Relation@{Binary\+Relation}!Binary\+Relation@{Binary\+Relation}}
+\subsubsection{\texorpdfstring{Binary\+Relation()}{BinaryRelation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename E1, typename E2$>$ \\
+\hyperlink{classBinaryRelation}{Binary\+Relation}$<$ E1, E2 $>$\+::\hyperlink{classBinaryRelation}{Binary\+Relation} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBinaryRelation_a94a2796b569f98d07f1c3662ec01706d}\label{classBinaryRelation_a94a2796b569f98d07f1c3662ec01706d}} 
+\index{Binary\+Relation@{Binary\+Relation}!Binary\+Relation@{Binary\+Relation}}
+\index{Binary\+Relation@{Binary\+Relation}!Binary\+Relation@{Binary\+Relation}}
+\subsubsection{\texorpdfstring{Binary\+Relation()}{BinaryRelation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename E1, typename E2$>$ \\
+\hyperlink{classBinaryRelation}{Binary\+Relation}$<$ E1, E2 $>$\+::\hyperlink{classBinaryRelation}{Binary\+Relation} (\begin{DoxyParamCaption}\item[{const \hyperlink{classBinaryRelation}{Binary\+Relation}$<$ E1, E2 $>$ \&}]{binrel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBinaryRelation_aad68b809d5a88cad7589c1c0c6507307}\label{classBinaryRelation_aad68b809d5a88cad7589c1c0c6507307}} 
+\index{Binary\+Relation@{Binary\+Relation}!Binary\+Relation@{Binary\+Relation}}
+\index{Binary\+Relation@{Binary\+Relation}!Binary\+Relation@{Binary\+Relation}}
+\subsubsection{\texorpdfstring{Binary\+Relation()}{BinaryRelation()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename E1, typename E2$>$ \\
+\hyperlink{classBinaryRelation}{Binary\+Relation}$<$ E1, E2 $>$\+::\hyperlink{classBinaryRelation}{Binary\+Relation} (\begin{DoxyParamCaption}\item[{const E1 \&}]{inputset,  }\item[{const E2 \&}]{targetset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBinaryRelation_a962cb01ecccb3f3c4ce821925f91ecd6}\label{classBinaryRelation_a962cb01ecccb3f3c4ce821925f91ecd6}} 
+\index{Binary\+Relation@{Binary\+Relation}!````~Binary\+Relation@{$\sim$\+Binary\+Relation}}
+\index{````~Binary\+Relation@{$\sim$\+Binary\+Relation}!Binary\+Relation@{Binary\+Relation}}
+\subsubsection{\texorpdfstring{$\sim$\+Binary\+Relation()}{~BinaryRelation()}}
+{\footnotesize\ttfamily template$<$typename E1, typename E2$>$ \\
+\hyperlink{classBinaryRelation}{Binary\+Relation}$<$ E1, E2 $>$\+::$\sim$\hyperlink{classBinaryRelation}{Binary\+Relation} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classBinaryRelation_a50e035f8c6a6ea0f3d410100200bf8ff}\label{classBinaryRelation_a50e035f8c6a6ea0f3d410100200bf8ff}} 
+\index{Binary\+Relation@{Binary\+Relation}!add@{add}}
+\index{add@{add}!Binary\+Relation@{Binary\+Relation}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily template$<$typename E1, typename E2$>$ \\
+bool \hyperlink{classBinaryRelation}{Binary\+Relation}$<$ E1, E2 $>$\+::add (\begin{DoxyParamCaption}\item[{E1}]{first,  }\item[{E2}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBinaryRelation_a96805510d13dac057a06d16a27196447}\label{classBinaryRelation_a96805510d13dac057a06d16a27196447}} 
+\index{Binary\+Relation@{Binary\+Relation}!check\+\_\+and\+\_\+erase@{check\+\_\+and\+\_\+erase}}
+\index{check\+\_\+and\+\_\+erase@{check\+\_\+and\+\_\+erase}!Binary\+Relation@{Binary\+Relation}}
+\subsubsection{\texorpdfstring{check\+\_\+and\+\_\+erase()}{check\_and\_erase()}}
+{\footnotesize\ttfamily template$<$typename E1, typename E2$>$ \\
+template$<$typename T $>$ \\
+bool \hyperlink{classBinaryRelation}{Binary\+Relation}$<$ E1, E2 $>$\+::check\+\_\+and\+\_\+erase (\begin{DoxyParamCaption}\item[{std\+::set$<$ T $>$}]{templ\+\_\+set,  }\item[{T}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBinaryRelation_a14bd1065b37bbf0793eb39dde25adf3b}\label{classBinaryRelation_a14bd1065b37bbf0793eb39dde25adf3b}} 
+\index{Binary\+Relation@{Binary\+Relation}!get\+\_\+input\+\_\+set@{get\+\_\+input\+\_\+set}}
+\index{get\+\_\+input\+\_\+set@{get\+\_\+input\+\_\+set}!Binary\+Relation@{Binary\+Relation}}
+\subsubsection{\texorpdfstring{get\+\_\+input\+\_\+set()}{get\_input\_set()}}
+{\footnotesize\ttfamily template$<$typename E1, typename E2$>$ \\
+std\+::set$<$E1$>$ \hyperlink{classBinaryRelation}{Binary\+Relation}$<$ E1, E2 $>$\+::get\+\_\+input\+\_\+set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBinaryRelation_acd26705b6496d2db082489df739485f2}\label{classBinaryRelation_acd26705b6496d2db082489df739485f2}} 
+\index{Binary\+Relation@{Binary\+Relation}!get\+\_\+pair\+\_\+set@{get\+\_\+pair\+\_\+set}}
+\index{get\+\_\+pair\+\_\+set@{get\+\_\+pair\+\_\+set}!Binary\+Relation@{Binary\+Relation}}
+\subsubsection{\texorpdfstring{get\+\_\+pair\+\_\+set()}{get\_pair\_set()}}
+{\footnotesize\ttfamily template$<$typename E1, typename E2$>$ \\
+std\+::set$<$\hyperlink{classPair}{Pair}$<$E1, E2$>$ $>$ \hyperlink{classBinaryRelation}{Binary\+Relation}$<$ E1, E2 $>$\+::get\+\_\+pair\+\_\+set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBinaryRelation_a97083c4e6c05cd1838f265819b608263}\label{classBinaryRelation_a97083c4e6c05cd1838f265819b608263}} 
+\index{Binary\+Relation@{Binary\+Relation}!get\+\_\+target\+\_\+set@{get\+\_\+target\+\_\+set}}
+\index{get\+\_\+target\+\_\+set@{get\+\_\+target\+\_\+set}!Binary\+Relation@{Binary\+Relation}}
+\subsubsection{\texorpdfstring{get\+\_\+target\+\_\+set()}{get\_target\_set()}}
+{\footnotesize\ttfamily template$<$typename E1, typename E2$>$ \\
+std\+::set$<$E2$>$ \hyperlink{classBinaryRelation}{Binary\+Relation}$<$ E1, E2 $>$\+::get\+\_\+target\+\_\+set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBinaryRelation_a8921eea825f118f12079ff73866a95b8}\label{classBinaryRelation_a8921eea825f118f12079ff73866a95b8}} 
+\index{Binary\+Relation@{Binary\+Relation}!operator==@{operator==}}
+\index{operator==@{operator==}!Binary\+Relation@{Binary\+Relation}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$typename E1, typename E2$>$ \\
+bool \hyperlink{classBinaryRelation}{Binary\+Relation}$<$ E1, E2 $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{classBinaryRelation}{Binary\+Relation}$<$ E1, E2 $>$ \&}]{comp\+\_\+rel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBinaryRelation_a5bb10d4cea0215ed647beec54f862414}\label{classBinaryRelation_a5bb10d4cea0215ed647beec54f862414}} 
+\index{Binary\+Relation@{Binary\+Relation}!product@{product}}
+\index{product@{product}!Binary\+Relation@{Binary\+Relation}}
+\subsubsection{\texorpdfstring{product()}{product()}}
+{\footnotesize\ttfamily template$<$typename E1, typename E2$>$ \\
+template$<$typename E3 $>$ \\
+\hyperlink{classBinaryRelation}{Binary\+Relation}$<$E1, E3$>$ \hyperlink{classBinaryRelation}{Binary\+Relation}$<$ E1, E2 $>$\+::product (\begin{DoxyParamCaption}\item[{\hyperlink{classBinaryRelation}{Binary\+Relation}$<$ E2, E3 $>$}]{relation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBinaryRelation_a8ae41ea2181d7cc5d1707c4584e8ebe0}\label{classBinaryRelation_a8ae41ea2181d7cc5d1707c4584e8ebe0}} 
+\index{Binary\+Relation@{Binary\+Relation}!remove@{remove}}
+\index{remove@{remove}!Binary\+Relation@{Binary\+Relation}}
+\subsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily template$<$typename E1, typename E2$>$ \\
+bool \hyperlink{classBinaryRelation}{Binary\+Relation}$<$ E1, E2 $>$\+::remove (\begin{DoxyParamCaption}\item[{E1}]{first,  }\item[{E2}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBinaryRelation_af8a9dd2f77b61656784a3a839264f6c4}\label{classBinaryRelation_af8a9dd2f77b61656784a3a839264f6c4}} 
+\index{Binary\+Relation@{Binary\+Relation}!remove\+\_\+from\+\_\+pretarget\+\_\+set@{remove\+\_\+from\+\_\+pretarget\+\_\+set}}
+\index{remove\+\_\+from\+\_\+pretarget\+\_\+set@{remove\+\_\+from\+\_\+pretarget\+\_\+set}!Binary\+Relation@{Binary\+Relation}}
+\subsubsection{\texorpdfstring{remove\+\_\+from\+\_\+pretarget\+\_\+set()}{remove\_from\_pretarget\_set()}}
+{\footnotesize\ttfamily template$<$typename E1, typename E2$>$ \\
+bool \hyperlink{classBinaryRelation}{Binary\+Relation}$<$ E1, E2 $>$\+::remove\+\_\+from\+\_\+pretarget\+\_\+set (\begin{DoxyParamCaption}\item[{E1}]{first }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBinaryRelation_a440767b58c9070ea5fd1d94dfbd22c62}\label{classBinaryRelation_a440767b58c9070ea5fd1d94dfbd22c62}} 
+\index{Binary\+Relation@{Binary\+Relation}!remove\+\_\+from\+\_\+target\+\_\+set@{remove\+\_\+from\+\_\+target\+\_\+set}}
+\index{remove\+\_\+from\+\_\+target\+\_\+set@{remove\+\_\+from\+\_\+target\+\_\+set}!Binary\+Relation@{Binary\+Relation}}
+\subsubsection{\texorpdfstring{remove\+\_\+from\+\_\+target\+\_\+set()}{remove\_from\_target\_set()}}
+{\footnotesize\ttfamily template$<$typename E1, typename E2$>$ \\
+bool \hyperlink{classBinaryRelation}{Binary\+Relation}$<$ E1, E2 $>$\+::remove\+\_\+from\+\_\+target\+\_\+set (\begin{DoxyParamCaption}\item[{E2}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBinaryRelation_a99c4077f22f057fc0fd4294d57be22a2}\label{classBinaryRelation_a99c4077f22f057fc0fd4294d57be22a2}} 
+\index{Binary\+Relation@{Binary\+Relation}!remove\+\_\+pair@{remove\+\_\+pair}}
+\index{remove\+\_\+pair@{remove\+\_\+pair}!Binary\+Relation@{Binary\+Relation}}
+\subsubsection{\texorpdfstring{remove\+\_\+pair()}{remove\_pair()}}
+{\footnotesize\ttfamily template$<$typename E1, typename E2$>$ \\
+bool \hyperlink{classBinaryRelation}{Binary\+Relation}$<$ E1, E2 $>$\+::remove\+\_\+pair (\begin{DoxyParamCaption}\item[{E1}]{first,  }\item[{E2}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBinaryRelation_a0b115484a4a411d873c0b77a4958a019}\label{classBinaryRelation_a0b115484a4a411d873c0b77a4958a019}} 
+\index{Binary\+Relation@{Binary\+Relation}!set\+\_\+input\+\_\+set@{set\+\_\+input\+\_\+set}}
+\index{set\+\_\+input\+\_\+set@{set\+\_\+input\+\_\+set}!Binary\+Relation@{Binary\+Relation}}
+\subsubsection{\texorpdfstring{set\+\_\+input\+\_\+set()}{set\_input\_set()}}
+{\footnotesize\ttfamily template$<$typename E1, typename E2$>$ \\
+void \hyperlink{classBinaryRelation}{Binary\+Relation}$<$ E1, E2 $>$\+::set\+\_\+input\+\_\+set (\begin{DoxyParamCaption}\item[{const std\+::set$<$ E1 $>$ \&}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBinaryRelation_a300cf42e6c66b9fc3b2ccf1877cc9587}\label{classBinaryRelation_a300cf42e6c66b9fc3b2ccf1877cc9587}} 
+\index{Binary\+Relation@{Binary\+Relation}!set\+\_\+pair\+\_\+set@{set\+\_\+pair\+\_\+set}}
+\index{set\+\_\+pair\+\_\+set@{set\+\_\+pair\+\_\+set}!Binary\+Relation@{Binary\+Relation}}
+\subsubsection{\texorpdfstring{set\+\_\+pair\+\_\+set()}{set\_pair\_set()}}
+{\footnotesize\ttfamily template$<$typename E1, typename E2$>$ \\
+void \hyperlink{classBinaryRelation}{Binary\+Relation}$<$ E1, E2 $>$\+::set\+\_\+pair\+\_\+set (\begin{DoxyParamCaption}\item[{const std\+::set$<$ \hyperlink{classPair}{Pair}$<$ E1, E2 $>$ $>$ \&}]{pairs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBinaryRelation_afa844b52bece82c8519bc1f90b0dcef2}\label{classBinaryRelation_afa844b52bece82c8519bc1f90b0dcef2}} 
+\index{Binary\+Relation@{Binary\+Relation}!set\+\_\+target\+\_\+set@{set\+\_\+target\+\_\+set}}
+\index{set\+\_\+target\+\_\+set@{set\+\_\+target\+\_\+set}!Binary\+Relation@{Binary\+Relation}}
+\subsubsection{\texorpdfstring{set\+\_\+target\+\_\+set()}{set\_target\_set()}}
+{\footnotesize\ttfamily template$<$typename E1, typename E2$>$ \\
+void \hyperlink{classBinaryRelation}{Binary\+Relation}$<$ E1, E2 $>$\+::set\+\_\+target\+\_\+set (\begin{DoxyParamCaption}\item[{const std\+::set$<$ E2 $>$ \&}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBinaryRelation_af18e09570203d804f5bb36cc5e6da75b}\label{classBinaryRelation_af18e09570203d804f5bb36cc5e6da75b}} 
+\index{Binary\+Relation@{Binary\+Relation}!transposition@{transposition}}
+\index{transposition@{transposition}!Binary\+Relation@{Binary\+Relation}}
+\subsubsection{\texorpdfstring{transposition()}{transposition()}}
+{\footnotesize\ttfamily template$<$typename E1, typename E2$>$ \\
+\hyperlink{classBinaryRelation}{Binary\+Relation}$<$E2, E1$>$ \hyperlink{classBinaryRelation}{Binary\+Relation}$<$ E1, E2 $>$\+::transposition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/relation/include/\hyperlink{binary__relation_8h}{binary\+\_\+relation.\+h}\end{DoxyCompactItemize}

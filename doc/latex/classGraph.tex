@@ -1,0 +1,158 @@
+\hypertarget{classGraph}{}\section{Graph$<$ V $>$ Class Template Reference}
+\label{classGraph}\index{Graph$<$ V $>$@{Graph$<$ V $>$}}
+
+
+{\ttfamily \#include $<$graph.\+h$>$}
+
+Inheritance diagram for Graph$<$ V $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classGraph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classGraph_a5d4385108258013f08650b8416263491}{add\+\_\+edge} (V source, V target)
+\item 
+virtual bool \hyperlink{classGraph_a7f53ea4210373a0cc23387f8fd00c407}{add\+\_\+edge} (\hyperlink{classPair}{Pair}$<$ V, V $>$ pair)
+\item 
+virtual bool \hyperlink{classGraph_ab7b409e1f6b821729cc50f0b841839cf}{add\+\_\+vertex} (V vertex)
+\item 
+virtual bool \hyperlink{classGraph_a9b5abbf0609d6759178231fd4ad1b9cf}{contains\+\_\+edge} (\hyperlink{classPair}{Pair}$<$ V, V $>$ edge)
+\item 
+virtual bool \hyperlink{classGraph_a8351227a94797412842af04eb5da11f1}{contains\+\_\+edge} (V source, V target)
+\item 
+virtual bool \hyperlink{classGraph_a7e92c541821a0d5631f06a1bf8e952b2}{contains\+\_\+vertex} (V vertex)
+\item 
+virtual std\+::set$<$ \hyperlink{classPair}{Pair}$<$ V, V $>$ $>$ \hyperlink{classGraph_a847d814a578284a8077a48a3d3b0f489}{get\+\_\+edge} ()
+\item 
+virtual std\+::set$<$ \hyperlink{classPair}{Pair}$<$ V, V $>$ $>$ \hyperlink{classGraph_afc915b991e4c288153ef2bf0b78e1018}{get\+\_\+vertices} ()
+\item 
+virtual int \hyperlink{classGraph_a034497a7f3c868e808e21a1e19cf9f7b}{get\+\_\+number\+\_\+of\+\_\+vertices} ()
+\item 
+virtual int \hyperlink{classGraph_a9ea6293e51579980dd72efdf2886bb31}{get\+\_\+number\+\_\+of\+\_\+edges} ()
+\item 
+virtual bool \hyperlink{classGraph_ad64e650ed7165eca49da146bd2228387}{set\+\_\+number\+\_\+of\+\_\+vertices} ()
+\item 
+virtual bool \hyperlink{classGraph_a3b3b210ef234c3e3e9d272b79ff683bc}{set\+\_\+number\+\_\+of\+\_\+edges} ()
+\item 
+virtual bool \hyperlink{classGraph_a5454b3a09601a16178453724070edf5c}{remove\+\_\+vertex} (V vertex)
+\item 
+virtual bool \hyperlink{classGraph_a1b9b0e39be7b5da7f1e8ce8c5d52be8e}{remove\+\_\+edge} (std\+::set$<$ \hyperlink{classPair}{Pair}$<$ V, V $>$ $>$)
+\item 
+virtual bool \hyperlink{classGraph_aaea37d99e6b0202c7c6fe132e0e5a372}{remove\+\_\+edge} (V source, V target)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGraph_a5d4385108258013f08650b8416263491}\label{classGraph_a5d4385108258013f08650b8416263491}} 
+\index{Graph@{Graph}!add\+\_\+edge@{add\+\_\+edge}}
+\index{add\+\_\+edge@{add\+\_\+edge}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{add\+\_\+edge()}{add\_edge()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename V $>$ \\
+virtual bool \hyperlink{classGraph}{Graph}$<$ V $>$\+::add\+\_\+edge (\begin{DoxyParamCaption}\item[{V}]{source,  }\item[{V}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classGraph_a7f53ea4210373a0cc23387f8fd00c407}\label{classGraph_a7f53ea4210373a0cc23387f8fd00c407}} 
+\index{Graph@{Graph}!add\+\_\+edge@{add\+\_\+edge}}
+\index{add\+\_\+edge@{add\+\_\+edge}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{add\+\_\+edge()}{add\_edge()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename V $>$ \\
+virtual bool \hyperlink{classGraph}{Graph}$<$ V $>$\+::add\+\_\+edge (\begin{DoxyParamCaption}\item[{\hyperlink{classPair}{Pair}$<$ V, V $>$}]{pair }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classGraph_ab7b409e1f6b821729cc50f0b841839cf}\label{classGraph_ab7b409e1f6b821729cc50f0b841839cf}} 
+\index{Graph@{Graph}!add\+\_\+vertex@{add\+\_\+vertex}}
+\index{add\+\_\+vertex@{add\+\_\+vertex}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{add\+\_\+vertex()}{add\_vertex()}}
+{\footnotesize\ttfamily template$<$typename V $>$ \\
+virtual bool \hyperlink{classGraph}{Graph}$<$ V $>$\+::add\+\_\+vertex (\begin{DoxyParamCaption}\item[{V}]{vertex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classGraph_a9b5abbf0609d6759178231fd4ad1b9cf}\label{classGraph_a9b5abbf0609d6759178231fd4ad1b9cf}} 
+\index{Graph@{Graph}!contains\+\_\+edge@{contains\+\_\+edge}}
+\index{contains\+\_\+edge@{contains\+\_\+edge}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{contains\+\_\+edge()}{contains\_edge()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename V $>$ \\
+virtual bool \hyperlink{classGraph}{Graph}$<$ V $>$\+::contains\+\_\+edge (\begin{DoxyParamCaption}\item[{\hyperlink{classPair}{Pair}$<$ V, V $>$}]{edge }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classGraph_a8351227a94797412842af04eb5da11f1}\label{classGraph_a8351227a94797412842af04eb5da11f1}} 
+\index{Graph@{Graph}!contains\+\_\+edge@{contains\+\_\+edge}}
+\index{contains\+\_\+edge@{contains\+\_\+edge}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{contains\+\_\+edge()}{contains\_edge()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename V $>$ \\
+virtual bool \hyperlink{classGraph}{Graph}$<$ V $>$\+::contains\+\_\+edge (\begin{DoxyParamCaption}\item[{V}]{source,  }\item[{V}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classGraph_a7e92c541821a0d5631f06a1bf8e952b2}\label{classGraph_a7e92c541821a0d5631f06a1bf8e952b2}} 
+\index{Graph@{Graph}!contains\+\_\+vertex@{contains\+\_\+vertex}}
+\index{contains\+\_\+vertex@{contains\+\_\+vertex}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{contains\+\_\+vertex()}{contains\_vertex()}}
+{\footnotesize\ttfamily template$<$typename V $>$ \\
+virtual bool \hyperlink{classGraph}{Graph}$<$ V $>$\+::contains\+\_\+vertex (\begin{DoxyParamCaption}\item[{V}]{vertex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classGraph_a847d814a578284a8077a48a3d3b0f489}\label{classGraph_a847d814a578284a8077a48a3d3b0f489}} 
+\index{Graph@{Graph}!get\+\_\+edge@{get\+\_\+edge}}
+\index{get\+\_\+edge@{get\+\_\+edge}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{get\+\_\+edge()}{get\_edge()}}
+{\footnotesize\ttfamily template$<$typename V $>$ \\
+virtual std\+::set$<$\hyperlink{classPair}{Pair}$<$V, V$>$ $>$ \hyperlink{classGraph}{Graph}$<$ V $>$\+::get\+\_\+edge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classGraph_a9ea6293e51579980dd72efdf2886bb31}\label{classGraph_a9ea6293e51579980dd72efdf2886bb31}} 
+\index{Graph@{Graph}!get\+\_\+number\+\_\+of\+\_\+edges@{get\+\_\+number\+\_\+of\+\_\+edges}}
+\index{get\+\_\+number\+\_\+of\+\_\+edges@{get\+\_\+number\+\_\+of\+\_\+edges}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{get\+\_\+number\+\_\+of\+\_\+edges()}{get\_number\_of\_edges()}}
+{\footnotesize\ttfamily template$<$typename V $>$ \\
+virtual int \hyperlink{classGraph}{Graph}$<$ V $>$\+::get\+\_\+number\+\_\+of\+\_\+edges (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classGraph_a034497a7f3c868e808e21a1e19cf9f7b}\label{classGraph_a034497a7f3c868e808e21a1e19cf9f7b}} 
+\index{Graph@{Graph}!get\+\_\+number\+\_\+of\+\_\+vertices@{get\+\_\+number\+\_\+of\+\_\+vertices}}
+\index{get\+\_\+number\+\_\+of\+\_\+vertices@{get\+\_\+number\+\_\+of\+\_\+vertices}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{get\+\_\+number\+\_\+of\+\_\+vertices()}{get\_number\_of\_vertices()}}
+{\footnotesize\ttfamily template$<$typename V $>$ \\
+virtual int \hyperlink{classGraph}{Graph}$<$ V $>$\+::get\+\_\+number\+\_\+of\+\_\+vertices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classGraph_afc915b991e4c288153ef2bf0b78e1018}\label{classGraph_afc915b991e4c288153ef2bf0b78e1018}} 
+\index{Graph@{Graph}!get\+\_\+vertices@{get\+\_\+vertices}}
+\index{get\+\_\+vertices@{get\+\_\+vertices}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{get\+\_\+vertices()}{get\_vertices()}}
+{\footnotesize\ttfamily template$<$typename V $>$ \\
+virtual std\+::set$<$\hyperlink{classPair}{Pair}$<$V, V$>$ $>$ \hyperlink{classGraph}{Graph}$<$ V $>$\+::get\+\_\+vertices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classGraph_a1b9b0e39be7b5da7f1e8ce8c5d52be8e}\label{classGraph_a1b9b0e39be7b5da7f1e8ce8c5d52be8e}} 
+\index{Graph@{Graph}!remove\+\_\+edge@{remove\+\_\+edge}}
+\index{remove\+\_\+edge@{remove\+\_\+edge}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{remove\+\_\+edge()}{remove\_edge()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename V $>$ \\
+virtual bool \hyperlink{classGraph}{Graph}$<$ V $>$\+::remove\+\_\+edge (\begin{DoxyParamCaption}\item[{std\+::set$<$ \hyperlink{classPair}{Pair}$<$ V, V $>$ $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classGraph_aaea37d99e6b0202c7c6fe132e0e5a372}\label{classGraph_aaea37d99e6b0202c7c6fe132e0e5a372}} 
+\index{Graph@{Graph}!remove\+\_\+edge@{remove\+\_\+edge}}
+\index{remove\+\_\+edge@{remove\+\_\+edge}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{remove\+\_\+edge()}{remove\_edge()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename V $>$ \\
+virtual bool \hyperlink{classGraph}{Graph}$<$ V $>$\+::remove\+\_\+edge (\begin{DoxyParamCaption}\item[{V}]{source,  }\item[{V}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classGraph_a5454b3a09601a16178453724070edf5c}\label{classGraph_a5454b3a09601a16178453724070edf5c}} 
+\index{Graph@{Graph}!remove\+\_\+vertex@{remove\+\_\+vertex}}
+\index{remove\+\_\+vertex@{remove\+\_\+vertex}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{remove\+\_\+vertex()}{remove\_vertex()}}
+{\footnotesize\ttfamily template$<$typename V $>$ \\
+virtual bool \hyperlink{classGraph}{Graph}$<$ V $>$\+::remove\+\_\+vertex (\begin{DoxyParamCaption}\item[{V}]{vertex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classGraph_a3b3b210ef234c3e3e9d272b79ff683bc}\label{classGraph_a3b3b210ef234c3e3e9d272b79ff683bc}} 
+\index{Graph@{Graph}!set\+\_\+number\+\_\+of\+\_\+edges@{set\+\_\+number\+\_\+of\+\_\+edges}}
+\index{set\+\_\+number\+\_\+of\+\_\+edges@{set\+\_\+number\+\_\+of\+\_\+edges}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{set\+\_\+number\+\_\+of\+\_\+edges()}{set\_number\_of\_edges()}}
+{\footnotesize\ttfamily template$<$typename V $>$ \\
+virtual bool \hyperlink{classGraph}{Graph}$<$ V $>$\+::set\+\_\+number\+\_\+of\+\_\+edges (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classGraph_ad64e650ed7165eca49da146bd2228387}\label{classGraph_ad64e650ed7165eca49da146bd2228387}} 
+\index{Graph@{Graph}!set\+\_\+number\+\_\+of\+\_\+vertices@{set\+\_\+number\+\_\+of\+\_\+vertices}}
+\index{set\+\_\+number\+\_\+of\+\_\+vertices@{set\+\_\+number\+\_\+of\+\_\+vertices}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{set\+\_\+number\+\_\+of\+\_\+vertices()}{set\_number\_of\_vertices()}}
+{\footnotesize\ttfamily template$<$typename V $>$ \\
+virtual bool \hyperlink{classGraph}{Graph}$<$ V $>$\+::set\+\_\+number\+\_\+of\+\_\+vertices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/graph/include/\hyperlink{graph_8h}{graph.\+h}\end{DoxyCompactItemize}
