@@ -1,9 +1,0 @@
-
-CC=gcc
-CFLAGS=-g -O3
-CP=CP
-
-TARGET=./build
-
-.c.O
-->|     $(CC) -c $(CFLAFS) $<

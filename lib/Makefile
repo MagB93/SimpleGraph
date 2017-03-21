@@ -56,38 +56,16 @@ CMAKE_BINARY_DIR = /home/mbadel/opt/SimpleGraph/lib
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
 
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
+# Special rule for the target test
+test/fast: test
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
+.PHONY : test/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -100,27 +78,16 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
 
-# Special rule for the target install/strip
-install/strip/fast: install/strip
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
 
-.PHONY : install/strip/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-
-.PHONY : install/local/fast
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -155,44 +122,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named simple_graph
+# Target rules for targets named relation
 
 # Build rule for target.
-simple_graph: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 simple_graph
-.PHONY : simple_graph
+relation: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 relation
+.PHONY : relation
 
 # fast build rule for target.
-simple_graph/fast:
-	$(MAKE) -f CMakeFiles/simple_graph.dir/build.make CMakeFiles/simple_graph.dir/build
-.PHONY : simple_graph/fast
+relation/fast:
+	$(MAKE) -f src/relation/CMakeFiles/relation.dir/build.make src/relation/CMakeFiles/relation.dir/build
+.PHONY : relation/fast
 
-src/myset.o: src/myset.cpp.o
+#=============================================================================
+# Target rules for targets named graph
 
-.PHONY : src/myset.o
+# Build rule for target.
+graph: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 graph
+.PHONY : graph
 
-# target to build an object file
-src/myset.cpp.o:
-	$(MAKE) -f CMakeFiles/simple_graph.dir/build.make CMakeFiles/simple_graph.dir/src/myset.cpp.o
-.PHONY : src/myset.cpp.o
-
-src/myset.i: src/myset.cpp.i
-
-.PHONY : src/myset.i
-
-# target to preprocess a source file
-src/myset.cpp.i:
-	$(MAKE) -f CMakeFiles/simple_graph.dir/build.make CMakeFiles/simple_graph.dir/src/myset.cpp.i
-.PHONY : src/myset.cpp.i
-
-src/myset.s: src/myset.cpp.s
-
-.PHONY : src/myset.s
-
-# target to generate assembly for a file
-src/myset.cpp.s:
-	$(MAKE) -f CMakeFiles/simple_graph.dir/build.make CMakeFiles/simple_graph.dir/src/myset.cpp.s
-.PHONY : src/myset.cpp.s
+# fast build rule for target.
+graph/fast:
+	$(MAKE) -f src/graph/CMakeFiles/graph.dir/build.make src/graph/CMakeFiles/graph.dir/build
+.PHONY : graph/fast
 
 # Help Target
 help:
@@ -200,16 +153,11 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install"
-	@echo "... list_install_components"
-	@echo "... rebuild_cache"
-	@echo "... simple_graph"
+	@echo "... test"
 	@echo "... edit_cache"
-	@echo "... install/strip"
-	@echo "... install/local"
-	@echo "... src/myset.o"
-	@echo "... src/myset.i"
-	@echo "... src/myset.s"
+	@echo "... rebuild_cache"
+	@echo "... relation"
+	@echo "... graph"
 .PHONY : help
 
 

@@ -32,35 +32,10 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "0")
 endif()
 
-if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/simple_graph/libsimple_graph.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/simple_graph/libsimple_graph.so")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/simple_graph/libsimple_graph.so"
-         RPATH "")
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/simple_graph" TYPE SHARED_LIBRARY FILES "/home/mbadel/opt/SimpleGraph/lib/libsimple_graph.so")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/simple_graph/libsimple_graph.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/simple_graph/libsimple_graph.so")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/simple_graph/libsimple_graph.so")
-    endif()
-  endif()
-endif()
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  include("/home/mbadel/opt/SimpleGraph/lib/src/cmake_install.cmake")
 
-if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/simple_graph" TYPE FILE FILES
-    "/home/mbadel/opt/SimpleGraph/include/binary_relation.h"
-    "/home/mbadel/opt/SimpleGraph/include/default_directed_graph.h"
-    "/home/mbadel/opt/SimpleGraph/include/directed_graph.h"
-    "/home/mbadel/opt/SimpleGraph/include/graph.h"
-    "/home/mbadel/opt/SimpleGraph/include/heterogene_relation.h"
-    "/home/mbadel/opt/SimpleGraph/include/homogene_relation.h"
-    "/home/mbadel/opt/SimpleGraph/include/myset.h"
-    "/home/mbadel/opt/SimpleGraph/include/pair.h"
-    "/home/mbadel/opt/SimpleGraph/include/undirected_graph.h"
-    "/home/mbadel/opt/SimpleGraph/include/weighted_graph.h"
-    )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

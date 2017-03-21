@@ -60,39 +60,133 @@ CMAKE_SOURCE_DIR = /home/mbadel/opt/SimpleGraph
 CMAKE_BINARY_DIR = /home/mbadel/opt/SimpleGraph/lib
 
 #=============================================================================
-# Target rules for target CMakeFiles/simple_graph.dir
+# Directory level rules for directory src
+
+# Convenience name for "all" pass in the directory.
+src/all: src/relation/all
+src/all: src/graph/all
+
+.PHONY : src/all
+
+# Convenience name for "clean" pass in the directory.
+src/clean: src/relation/clean
+src/clean: src/graph/clean
+
+.PHONY : src/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/preinstall: src/relation/preinstall
+src/preinstall: src/graph/preinstall
+
+.PHONY : src/preinstall
+
+#=============================================================================
+# Directory level rules for directory src/relation
+
+# Convenience name for "all" pass in the directory.
+src/relation/all: src/relation/CMakeFiles/relation.dir/all
+
+.PHONY : src/relation/all
+
+# Convenience name for "clean" pass in the directory.
+src/relation/clean: src/relation/CMakeFiles/relation.dir/clean
+
+.PHONY : src/relation/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/relation/preinstall:
+
+.PHONY : src/relation/preinstall
+
+#=============================================================================
+# Target rules for target src/relation/CMakeFiles/relation.dir
 
 # All Build rule for target.
-CMakeFiles/simple_graph.dir/all:
-	$(MAKE) -f CMakeFiles/simple_graph.dir/build.make CMakeFiles/simple_graph.dir/depend
-	$(MAKE) -f CMakeFiles/simple_graph.dir/build.make CMakeFiles/simple_graph.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mbadel/opt/SimpleGraph/lib/CMakeFiles --progress-num=1,2 "Built target simple_graph"
-.PHONY : CMakeFiles/simple_graph.dir/all
+src/relation/CMakeFiles/relation.dir/all:
+	$(MAKE) -f src/relation/CMakeFiles/relation.dir/build.make src/relation/CMakeFiles/relation.dir/depend
+	$(MAKE) -f src/relation/CMakeFiles/relation.dir/build.make src/relation/CMakeFiles/relation.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mbadel/opt/SimpleGraph/lib/CMakeFiles --progress-num=3,4,5 "Built target relation"
+.PHONY : src/relation/CMakeFiles/relation.dir/all
 
 # Include target in all.
-all: CMakeFiles/simple_graph.dir/all
+all: src/relation/CMakeFiles/relation.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/simple_graph.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mbadel/opt/SimpleGraph/lib/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/simple_graph.dir/all
+src/relation/CMakeFiles/relation.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mbadel/opt/SimpleGraph/lib/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 src/relation/CMakeFiles/relation.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mbadel/opt/SimpleGraph/lib/CMakeFiles 0
-.PHONY : CMakeFiles/simple_graph.dir/rule
+.PHONY : src/relation/CMakeFiles/relation.dir/rule
 
 # Convenience name for target.
-simple_graph: CMakeFiles/simple_graph.dir/rule
+relation: src/relation/CMakeFiles/relation.dir/rule
 
-.PHONY : simple_graph
-
-# clean rule for target.
-CMakeFiles/simple_graph.dir/clean:
-	$(MAKE) -f CMakeFiles/simple_graph.dir/build.make CMakeFiles/simple_graph.dir/clean
-.PHONY : CMakeFiles/simple_graph.dir/clean
+.PHONY : relation
 
 # clean rule for target.
-clean: CMakeFiles/simple_graph.dir/clean
+src/relation/CMakeFiles/relation.dir/clean:
+	$(MAKE) -f src/relation/CMakeFiles/relation.dir/build.make src/relation/CMakeFiles/relation.dir/clean
+.PHONY : src/relation/CMakeFiles/relation.dir/clean
+
+# clean rule for target.
+clean: src/relation/CMakeFiles/relation.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory src/graph
+
+# Convenience name for "all" pass in the directory.
+src/graph/all: src/graph/CMakeFiles/graph.dir/all
+
+.PHONY : src/graph/all
+
+# Convenience name for "clean" pass in the directory.
+src/graph/clean: src/graph/CMakeFiles/graph.dir/clean
+
+.PHONY : src/graph/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/graph/preinstall:
+
+.PHONY : src/graph/preinstall
+
+#=============================================================================
+# Target rules for target src/graph/CMakeFiles/graph.dir
+
+# All Build rule for target.
+src/graph/CMakeFiles/graph.dir/all:
+	$(MAKE) -f src/graph/CMakeFiles/graph.dir/build.make src/graph/CMakeFiles/graph.dir/depend
+	$(MAKE) -f src/graph/CMakeFiles/graph.dir/build.make src/graph/CMakeFiles/graph.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mbadel/opt/SimpleGraph/lib/CMakeFiles --progress-num=1,2 "Built target graph"
+.PHONY : src/graph/CMakeFiles/graph.dir/all
+
+# Include target in all.
+all: src/graph/CMakeFiles/graph.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/graph/CMakeFiles/graph.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mbadel/opt/SimpleGraph/lib/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 src/graph/CMakeFiles/graph.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mbadel/opt/SimpleGraph/lib/CMakeFiles 0
+.PHONY : src/graph/CMakeFiles/graph.dir/rule
+
+# Convenience name for target.
+graph: src/graph/CMakeFiles/graph.dir/rule
+
+.PHONY : graph
+
+# clean rule for target.
+src/graph/CMakeFiles/graph.dir/clean:
+	$(MAKE) -f src/graph/CMakeFiles/graph.dir/build.make src/graph/CMakeFiles/graph.dir/clean
+.PHONY : src/graph/CMakeFiles/graph.dir/clean
+
+# clean rule for target.
+clean: src/graph/CMakeFiles/graph.dir/clean
 
 .PHONY : clean
 
